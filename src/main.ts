@@ -21,13 +21,15 @@ InURL.addEventListener("keyup", (e) => {
 var timeout: number;
 
 function processInput(input: string): void {
+  OutResult.innerText = ""
+
   if (!URL_REGEX.test(input)) {
     OutInfo.innerText = "Input doesn't match the format of an URL"
+    clearTimeout(timeout)
     return
   }
 
   OutInfo.innerText = ""
-  OutResult.innerText = ""
 
   clearTimeout(timeout)
 
