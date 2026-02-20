@@ -37,7 +37,7 @@ function processInput(input: string): void {
     console.log("FETCH")
     mockFetch(SERVER_URL, { method: "POST", body: JSON.stringify({ data: input }) }).then((data) => {
       OutResult.innerText = "The URL is a " + (data == ResultType.file ? "file" : "folder")
-    })
+    }).catch(() => OutInfo.innerText = "Server Error")
   }, DEBOUNCE_TIMER)
 }
 
