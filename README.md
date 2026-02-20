@@ -14,6 +14,13 @@ npm i
 pnpm i
 ```
 
+2. Build script
+```sh
+npm run build
+#OR
+pnpm build
+```
+
 2. Open the index.html
 
 ## Timetable
