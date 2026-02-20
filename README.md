@@ -28,7 +28,6 @@ pnpm build
 - Completing the given task - 52 min + 2 min additional error handling (which could happen with the non mock version)
 - Adding styling - 15 min
 - Writing documentation - 8 min
-- 
 
 ## Images
 
